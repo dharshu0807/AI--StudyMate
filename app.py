@@ -592,7 +592,7 @@ def get_ai_response(user_msg, tool=None):
     """Calls the completely free live Gemini model based on the selected tool or chat input."""
     import google.generativeai as genai
     
-    GEMINI_API_KEY = "AQ.Ab8RN6KBdGtF7Ev0KmKIhhgYA0iqBrXVq_BRZwbTawncXahTdA"
+    GEMINI_API_KEY = st.secrets["AQ.Ab8RN6KBdGtF7Ev0KmKIhhgYA0iqBrXVq_BRZwbTawncXahTdA"]
     
     try:
         genai.configure(api_key=GEMINI_API_KEY)
